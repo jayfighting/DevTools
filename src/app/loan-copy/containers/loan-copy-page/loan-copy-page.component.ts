@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoanCopyPageComponent implements OnInit {
   constructor() { }
-
+  foods = [
+    {value: 'steak-0', viewValue: 'Steak'},
+    {value: 'pizza-1', viewValue: 'Pizza'},
+    {value: 'tacos-2', viewValue: 'Tacos'}
+  ];
   ngOnInit() { }
+}
+
+export class SelectOverviewExample {
+  foods = [
+    {value: 'steak-0', viewValue: 'Steak'},
+    {value: 'pizza-1', viewValue: 'Pizza'},
+    {value: 'tacos-2', viewValue: 'Tacos'}
+  ];
 }
