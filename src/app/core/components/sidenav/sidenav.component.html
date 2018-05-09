@@ -1,0 +1,22 @@
+<mat-sidenav-container class="core-sidenav-container">
+  <mat-sidenav #sidenav class="core-sidenav mat-elevation-z10" [mode]="isScreenSmall() ? 'over' : 'side'">
+    <mat-toolbar color="primary">
+      Navigation
+    </mat-toolbar>
+
+    <mat-nav-list>
+      <a mat-list-item routerLink='loan-copy'>Loan Copy</a>
+      <a mat-list-item routerLink='db-finder'>DB Finder</a>
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+  <div class="core-sidenav-content">
+    <core-header (toggleSidebar)="sidenav.toggle()">
+    </core-header>
+    <core-main class="wrapper">
+      <router-outlet></router-outlet>
+    </core-main>
+  </div>
+
+</mat-sidenav-container>
