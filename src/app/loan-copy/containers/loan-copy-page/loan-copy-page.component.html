@@ -1,7 +1,16 @@
-<p>
-  loan-copy-page works!
-</p>
+<!-- <div fxlayout="column">
+  <div>1. One</div>
+  <div>2. Two</div>
+  <div>3. Three</div>
+  <div>4. Four</div>
+  <div>5. Five</div>
+</div>
 
+<div layout="column">
+  <div> 1 </div>
+  <div> 2 </div>
+  <div> 3 </div>
+</div>
 <mat-form-field>
   <mat-select placeholder="Favorite food">
     <mat-option *ngFor="let food of foods" [value]="food.value">
@@ -9,3 +18,190 @@
     </mat-option>
   </mat-select>
 </mat-form-field>
+
+
+<mat-card class="card-demo">
+  <mat-card-title>Flex Offset Values</mat-card-title>
+  <mat-card-subtitle>Explore impact of values for the 'flex-offset' API:</mat-card-subtitle>
+  <mat-card-content>
+    <div class="containerX">
+      <div fxlayout="row" class="colored box nopad">
+        <div fxflex="66" fxflexOffset="15"> [fxFlex="66"] [fxFlexOffset="15"]</div>
+        <div fxflex> [fxFlex]</div>
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-footer>
+    <div class="hint">&lt;div fxLayout="row" &gt;</div>
+  </mat-card-footer>
+</mat-card> -->
+
+<!-- <mat-card-content class="large mat-card-content">
+  <div fxflexfill="" style="height: 100%; margin: 0px; min-height: 100%; min-width: 100%; width: 100%;">
+    <div fxflexfill="" fxlayoutgap="10px grid" style="cursor: pointer; height: 100%; margin: 0px -10px -10px 0px; min-height: 100%; min-width: 100%; width: 100%; flex-flow: row wrap; box-sizing: border-box; display: flex;">
+      <div fxflex="25" style="margin-right: 0px; flex: 1 1 25%; box-sizing: border-box; padding: 0px 10px 10px 0px; max-width: 25%;">
+        <div class="one" fxflexfill="" fxlayoutalign="center center" style="height: 100%; margin: 0px; min-height: 100%; min-width: 100%; width: 100%; place-content: center; align-items: center; flex-direction: row; box-sizing: border-box; display: flex;">
+          A
+        </div>
+      </div>
+      <div fxflex="25" style="margin-right: 0px; flex: 1 1 25%; box-sizing: border-box; padding: 0px 10px 10px 0px; max-width: 25%;">
+        <div class="two" fxflexfill="" fxlayoutalign="center center" style="height: 100%; margin: 0px; min-height: 100%; min-width: 100%; width: 100%; place-content: center; align-items: center; flex-direction: row; box-sizing: border-box; display: flex;">
+          B
+        </div>
+      </div>
+      <div fxflex="25" style="margin-right: 0px; flex: 1 1 25%; box-sizing: border-box; padding: 0px 10px 10px 0px; max-width: 25%;">
+        <div class="three" fxflexfill="" fxlayoutalign="center center" style="height: 100%; margin: 0px; min-height: 100%; min-width: 100%; width: 100%; place-content: center; align-items: center; flex-direction: row; box-sizing: border-box; display: flex;">
+          C
+        </div>
+      </div>
+      <div fxflex="25" style="margin-right: 0px; flex: 1 1 25%; box-sizing: border-box; padding: 0px 10px 10px 0px; max-width: 25%;">
+        <div class="four" fxflexfill="" fxlayoutalign="center center" style="height: 100%; margin: 0px; min-height: 100%; min-width: 100%; width: 100%; place-content: center; align-items: center; flex-direction: row; box-sizing: border-box; display: flex;">
+          D
+        </div>
+      </div>
+      <div fxflex="25" style="margin-right: 0px; flex: 1 1 25%; box-sizing: border-box; padding: 0px 10px 10px 0px; max-width: 25%;">
+        <div class="five" fxflexfill="" fxlayoutalign="center center" style="height: 100%; margin: 0px; min-height: 100%; min-width: 100%; width: 100%; place-content: center; align-items: center; flex-direction: row; box-sizing: border-box; display: flex;">
+          E
+        </div>
+      </div>
+      <div fxflex="25" style="margin-right: 0px; flex: 1 1 25%; box-sizing: border-box; padding: 0px 10px 10px 0px; max-width: 25%;">
+        <div class="six" fxflexfill="" fxlayoutalign="center center" style="height: 100%; margin: 0px; min-height: 100%; min-width: 100%; width: 100%; place-content: center; align-items: center; flex-direction: row; box-sizing: border-box; display: flex;">
+          F
+        </div>
+      </div>
+      <div fxflex="25" style="flex: 1 1 25%; box-sizing: border-box; padding: 0px 10px 10px 0px; max-width: 25%;">
+        <div class="seven" fxflexfill="" fxlayoutalign="center center" style="height: 100%; margin: 0px; min-height: 100%; min-width: 100%; width: 100%; place-content: center; align-items: center; flex-direction: row; box-sizing: border-box; display: flex;">
+          G
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-card-content> -->
+<!-- <mat-card class="loan-copy-page-form-container">
+   <mat-card-header>
+     <mat-card-title>title</mat-card-title>
+     <mat-card-subtitle>subtitle</mat-card-subtitle>
+   </mat-card-header>
+   <mat-card-content> -->
+
+
+<!-- <mat-vertical-stepper>
+  <mat-step label="Step 1">
+    <mat-select placeholder="Favorite food" class="control-margin">
+      <mat-option *ngFor="let food of foods" [value]="food.value">
+        {{ food.viewValue }}
+      </mat-option>
+    </mat-select>
+  </mat-step>
+  <mat-step label="Step 1">
+    Content 2
+  </mat-step>
+</mat-vertical-stepper> -->
+
+<!-- <mat-card class="copy-loan-card">
+  <mat-card-header>
+    <div mat-card-avatar>
+      <mat-icon>cake</mat-icon>
+    </div>
+    <mat-card-title>
+      Empower loan copying tool</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+
+
+    <div class="copy-loan-container">
+      <div class="copy-loan-horizontal-container">
+        <mat-form-field>
+          <mat-select placeholder="Source Environment">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{ food.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-select placeholder="Target Environment">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{ food.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="copy-loan-horizontal-container">
+        <mat-form-field>
+          <input matInput placeholder="Source Loan Number">
+        </mat-form-field>
+        <mat-form-field>
+          <input type="number" matInput placeholder="Number of Copies" value="1">
+        </mat-form-field>
+      </div>
+
+      <mat-form-field>
+        <input matInput placeholder="Target Branch Id">
+      </mat-form-field>
+
+      <mat-checkbox>Inclue Documents</mat-checkbox>
+
+      <div class="copy-loan-submit-button">
+        <button mat-raised-button color="primary">Get Loan Numbers</button>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card> -->
+
+<!-- <mat-progress-bar mode="indeterminate"></mat-progress-bar> -->
+<mat-card class="copy-loan-card">
+<form class="copy-loan-full-width">
+  <mat-form-field class="copy-loan-full-width">
+    <input matInput disabled value="Empower Copy Loan Tool">
+  </mat-form-field>
+
+  <table class="copy-loan-full-width" cellspacing="0">
+    <tr>
+      <td>
+          <mat-form-field>
+              <mat-select placeholder="Source Environment">
+                <mat-option *ngFor="let food of foods" [value]="food.value">
+                  {{ food.viewValue }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+      </td>
+      <td>
+          <mat-form-field>
+              <mat-select placeholder="Target Environment">
+                <mat-option *ngFor="let food of foods" [value]="food.value">
+                  {{ food.viewValue }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+      </td>
+    </tr>
+  </table>
+
+  <table class="copy-loan-full-width" cellspacing="0">
+      <tr>
+        <td>
+            <mat-form-field>
+                <input matInput placeholder="Source Loan Number">
+              </mat-form-field>
+        </td>
+        <td>
+            <mat-form-field class="form-field-number">
+                <input type="number" matInput placeholder="Copies" value="1">
+              </mat-form-field>
+        </td>
+      </tr>
+    </table>
+
+  <p>
+      <mat-form-field class="copy-loan-full-width">
+          <input matInput placeholder="Target Branch Id">
+        </mat-form-field>
+  </p>
+  <div class="copy-loan-submit-button">
+      <button mat-raised-button color="primary">Get Loan Numbers</button>
+    </div>
+</form>
+</mat-card>
