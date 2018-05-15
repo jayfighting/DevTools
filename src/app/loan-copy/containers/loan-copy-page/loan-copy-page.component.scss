@@ -1,20 +1,20 @@
-.copy-loan-card
+.copy-loan-container
 {
   max-width: 450px;
-}
 
-.copy-loan-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
-}
+  form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
 
-.copy-loan-full-width {
-  width: 100%;
-}
+  table {
+    widows: 100%;
+  }
 
-.copy-loan-submit-button {
-  align-self: auto;
+  button {
+    align-self: auto;
+  }
 }
 
 .form-field-number {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoanCopyService } from '../../loan-copy.service';
 
 @Component({
   selector: 'app-loan-copy-page',
@@ -6,19 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./loan-copy-page.component.scss']
 })
 export class LoanCopyPageComponent implements OnInit {
-  constructor() { }
-  foods = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'}
-  ];
-  ngOnInit() { }
-}
-
-export class SelectOverviewExample {
-  foods = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'}
-  ];
+  constructor(private _loanCopyService: LoanCopyService) { }
+  ngOnInit() {
+    
+    console.log(this._loanCopyService.generateLoanNumbers());
+  }
 }

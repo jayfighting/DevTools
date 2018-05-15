@@ -151,57 +151,57 @@
 </mat-card> -->
 
 <!-- <mat-progress-bar mode="indeterminate"></mat-progress-bar> -->
-<mat-card class="copy-loan-card">
-<form class="copy-loan-full-width">
-  <mat-form-field class="copy-loan-full-width">
-    <input matInput disabled value="Empower Copy Loan Tool">
-  </mat-form-field>
+<mat-card class="copy-loan-container">
+  <form>
+    <mat-form-field class="full-width">
+      <input matInput disabled value="Empower Copy Loan Tool">
+    </mat-form-field>
 
-  <table class="copy-loan-full-width" cellspacing="0">
-    <tr>
-      <td>
-          <mat-form-field>
-              <mat-select placeholder="Source Environment">
-                <mat-option *ngFor="let food of foods" [value]="food.value">
-                  {{ food.viewValue }}
-                </mat-option>
-              </mat-select>
-            </mat-form-field>
-      </td>
-      <td>
-          <mat-form-field>
-              <mat-select placeholder="Target Environment">
-                <mat-option *ngFor="let food of foods" [value]="food.value">
-                  {{ food.viewValue }}
-                </mat-option>
-              </mat-select>
-            </mat-form-field>
-      </td>
-    </tr>
-  </table>
-
-  <table class="copy-loan-full-width" cellspacing="0">
+    <table class="full-width" cellspacing="0">
       <tr>
         <td>
-            <mat-form-field>
-                <input matInput placeholder="Source Loan Number">
-              </mat-form-field>
+          <mat-form-field>
+            <mat-select placeholder="Source Environment">
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{ food.viewValue }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
         </td>
         <td>
-            <mat-form-field class="form-field-number">
-                <input type="number" matInput placeholder="Copies" value="1">
-              </mat-form-field>
+          <mat-form-field>
+            <mat-select placeholder="Target Environment">
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{ food.viewValue }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
         </td>
       </tr>
     </table>
 
-  <p>
-      <mat-form-field class="copy-loan-full-width">
-          <input matInput placeholder="Target Branch Id">
-        </mat-form-field>
-  </p>
-  <div class="copy-loan-submit-button">
+    <table class="full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field>
+            <input matInput placeholder="Source Loan Number">
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="form-field-number">
+            <input type="number" matInput placeholder="Copies" value="1">
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+
+    <p>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Target Branch Id">
+      </mat-form-field>
+    </p>
+    <div class="copy-loan-submit-button">
       <button mat-raised-button color="primary">Get Loan Numbers</button>
     </div>
-</form>
+  </form>
 </mat-card>
